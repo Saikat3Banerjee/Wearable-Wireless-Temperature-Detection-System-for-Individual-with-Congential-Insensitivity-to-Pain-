@@ -19,15 +19,6 @@
 #include "Adafruit_MQTT.h"
 #include "Adafruit_MQTT_Client.h"
 
-//int sensor = 0;
-  //int sensorValue = analogRead(A0);
-// const float BETA = 3650;
-//const float NOM_RESIST = 3999;
-//const float NOM_TEMP = 25;
-//const float R1 = 15;  // Fixed resistor next to thermistor. 0 if not required.
-//const float R2 = 200;  // Fixed resistor on other side of divider
-//const float Vcc = 3.300;  // Input voltage
-// Pin to measure from
 const float analogInPin = A0;
 
 /************************* WiFi Access Point *********************************/
@@ -98,15 +89,7 @@ void setup() {
   //mqtt.subscribe(&onoffbutton);
 }
 http://www.jms-se.com/rtd.php
-// Converts resistance (in ohms) to temperature (in deg C)
-//float resistanceToCelsius(float resistance) {
-//  // Simplified Steinhart-Hart
-//  float temp = log(resistance / NOM_RESIST) / BETA;
-//  temp += 1.0 / (NOM_TEMP + 273.15);
-//  temp = (1 / temp) - 40;
-//  temp -= 273.15; // convert to C
-//  return temp;
-//}
+
 
 uint32_t x=0;
 
@@ -120,35 +103,6 @@ void loop() {
   // try to spend your time here
 
   // Now we can publish stuff!
-
-
-//void loop() {
-  // read the input on analog pin 0:
-//  float sum = 0;
-//  int iteration = 100;
-//  for( int i = 0; i < iteration; i++)
-//  {
-//      int sensorValue = (A0);
-//     Serial.print(sensorValue,6);
-//      sum += sensorValue;
-//        
-//  }
-//
-//   displayBusy();
-//   // convert the analog signal to voltage
-//  // the ESP2866 A0 reads between 0 and ~3 volts, producing a corresponding value
-//  // between 0 and 1024. The equation below will convert the value to a voltage value.
-//  analogVolts = (analogValue * 3.03) /1024;
-//  DebugLn(String(analogVolts));
-//  temperature = (analogVolts) * 100; //converting from 10 mv per degree wit 500 mV offset
-//                                                //to degrees ((voltage - 500mV) times 100)
-// 
-//   data = "temp_sensor=" + String(temperature);
-//  DebugLn(data);
-
-  // Serial.print(sensorValue,6);
-  //float voltage = sum * (5 / (1024*iteration));
-  //float temperature = ((voltage*1000) - 2877)/.97977;
 
    digitalWrite(LED_BUILTIN, HIGH);
   delay(10000);
