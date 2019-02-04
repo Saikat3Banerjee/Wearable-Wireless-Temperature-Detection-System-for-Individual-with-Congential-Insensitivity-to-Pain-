@@ -12,7 +12,7 @@
   please support Adafruit and open-source hardware by purchasing
   products from Adafruit!
 
-  Written by Tony DiCola for Adafruit Industries.
+  Written by Tony DiCola for Adafruit Industries. Edited by Saikat Banerjee.
   MIT license, all text above must be included in any redistribution
  ****************************************************/
 #include <ESP8266WiFi.h>
